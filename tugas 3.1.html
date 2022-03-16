@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>Konversi Nilai Angka Ke Huruf</title>
+    </head>
+    <Script language="JavaScript">
+        function test () {
+        var val1=document.kirim.T1.value
+         if(val1>80&&100)
+           document.kirim.T2.value="A"
+         else if(val1>70&&80)
+           document.kirim.T2.value="AB"
+         else if(val1>65&&70)
+           document.kirim.T2.value="B"
+         else if(val1>60&&65)
+           document.kirim.T2.value="BC"
+         else if(val1>55&&60)
+           document.kirim.T2.value="C"
+         else if(val1>40&&55)
+           document.kirim.T2.value="D"
+         else
+            document.kirim.T2.value="E"
+        }
+        </script>
+        <body>
+        <h1>KONVERSI NILAI ANGKA KE HURUF</h1>
+        <form method="POST" name="kirim">
+        <p> NILAI ANGKA <input type="text" name="T1" size="18"> 
+            NILAI HURUF <input type="text" name="T2" size="18"></p>
+        <p><input type="button" value="KONVERSI" name="B1" onclick=test()></p>
+        </form>
+        </body>
+</html>
